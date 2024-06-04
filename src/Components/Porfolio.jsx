@@ -11,110 +11,141 @@ import img6 from "../images/warren-umoh-VL12rhr4mi0-unsplash.jpg";
 
 const Porfolio = () => {
   return (
-    <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
-      <div class="portfolio-cards">
-        <div class="portfolio-card">
-          <img src={img1} alt="" />
-          <div class="overlay">
-            <h3>E-sports Org Website</h3>
-            <p>turning point e-sports org website using html and css.</p>
+    <div
+      className="flex flex-col items-center justify-center py-50 px-100"
+      id="portfolio"
+    >
+      <h1 className="text-70 font-700 text-hover-color font-Libre">
+        Portfolio
+      </h1>
+      <div className="portfolio-cards">
+        <div className="portfolio-card relative h-30 w-30 bg-bg-color rounded-20 overflow-hidden items-center justify-center gap-2.5">
+          <img className="relative h-30 w-30 object-cover" src={img1} alt="" />
+          <div className="overlay">
+            <h3 className="text-hover-color text-24 font-700">
+              E-sports Org Website
+            </h3>
+            <p className="text-hover-color text-16 text-center">
+              turning point e-sports org website using html and css.
+            </p>
             <Link to="https://github.com/Pruthviraj-03/tp_e-sports.git">
-              <button>
+              <button className="cursor-pointer flex items-center justify-center flex-row gap-10 text-12 text-body-color rounded-8 bg-yellow-color w-108 h-36">
                 See More
                 <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
               </button>
             </Link>
           </div>
         </div>
-        <div class="portfolio-card">
-          <img src={img2} alt="" />
-          <div class="overlay">
-            <h3>Music Web App</h3>
-            <p>simple music web app using html, css and js.</p>
+        <div className="portfolio-card relative h-30 w-30 bg-bg-color rounded-20 overflow-hidden items-center justify-center gap-2.5">
+          <img className="relative h-30 w-30 object-cover" src={img2} alt="" />
+          <div className="overlay">
+            <h3 className="text-hover-color text-24 font-700">Music Web App</h3>
+            <p className="text-hover-color text-16 text-center">
+              simple music web app using html, css and js.
+            </p>
             <Link to="https://github.com/Pruthviraj-03/music_web_app.git">
-              <button>
+              <button className="cursor-pointer flex items-center justify-center flex-row gap-10 text-12 text-body-color rounded-8 bg-yellow-color w-108 h-36">
                 See More
                 <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
               </button>
             </Link>
           </div>
         </div>
-        <div class="portfolio-card">
-          <img src={img3} alt="" />
-          <div class="overlay">
-            <h3>Covid Data Tracker</h3>
-            <p>covid data tracker web app using rest api and react.</p>
+        <div className="portfolio-card relative h-30 w-30 bg-bg-color rounded-20 overflow-hidden items-center justify-center gap-2.5">
+          <img className="relative h-30 w-30 object-cover" src={img3} alt="" />
+          <div className="overlay">
+            <h3 className="text-hover-color text-24 font-700">
+              Covid Data Tracker
+            </h3>
+            <p className="text-hover-color text-16 text-center">
+              covid data tracker web app using rest api and react.
+            </p>
             <Link to="https://github.com/Pruthviraj-03/covid_data_tracker.git">
-              <button>
+              <button className="cursor-pointer flex items-center justify-center flex-row gap-10 text-12 text-body-color rounded-8 bg-yellow-color w-108 h-36">
                 See More
                 <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
               </button>
             </Link>
           </div>
         </div>
-        <div class="portfolio-card">
-          <img src={img4} alt="" />
-          <div class="overlay">
-            <h3>Cryptoverse Website</h3>
-            <p>
+        <div className="portfolio-card relative h-30 w-30 bg-bg-color rounded-20 overflow-hidden items-center justify-center gap-2.5">
+          <img className="relative h-30 w-30 object-cover" src={img4} alt="" />
+          <div className="overlay">
+            <h3 className="text-hover-color text-24 font-700">
+              Cryptoverse Website
+            </h3>
+            <p className="text-hover-color text-16 text-center">
               cryptoverse crypto currency data website using react and redux
               toolkit.
             </p>
             <Link to="https://github.com/Pruthviraj-03/cryptoverse.git">
-              <button>
+              <button className="cursor-pointer flex items-center justify-center flex-row gap-10 text-12 text-body-color rounded-8 bg-yellow-color w-108 h-36">
                 See More
                 <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
               </button>
             </Link>
           </div>
         </div>
-        <div class="portfolio-card">
-          <img src={img5} alt="" />
-          <div class="overlay">
-            <h3>To-Do Web-App</h3>
-            <p>to-do-list in react, redux toolkit and local storage.</p>
+        <div className="portfolio-card relative h-30 w-30 bg-bg-color rounded-20 overflow-hidden items-center justify-center gap-2.5">
+          <img className="relative h-30 w-30 object-cover" src={img5} alt="" />
+          <div className="overlay">
+            <h3 className="text-hover-color text-24 font-700">To-Do Web-App</h3>
+            <p className="text-hover-color text-16 text-center">
+              to-do-list in react, redux toolkit and local storage.
+            </p>
             <Link to="https://github.com/Pruthviraj-03/to-do-list.git">
-              <button>
+              <button className="cursor-pointer flex items-center justify-center flex-row gap-10 text-12 text-body-color rounded-8 bg-yellow-color w-108 h-36">
                 See More
                 <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
               </button>
             </Link>
           </div>
         </div>
-        <div class="portfolio-card">
-          <img src={img6} alt="" />
-          <div class="overlay">
-            <h3>To-Do Web-App in MERN</h3>
-            <p>to-do-list using mern stack.</p>
+        <div className="portfolio-card relative h-30 w-30 bg-bg-color rounded-20 overflow-hidden items-center justify-center gap-2.5">
+          <img className="relative h-30 w-30 object-cover" src={img6} alt="" />
+          <div className="overlay">
+            <h3 className="text-hover-color text-24 font-700">
+              To-Do Web-App in MERN
+            </h3>
+            <p className="text-hover-color text-16 text-center">
+              to-do-list using mern stack.
+            </p>
             <Link to="https://github.com/Pruthviraj-03/todo_mern.git">
-              <button>
+              <button className="cursor-pointer flex items-center justify-center flex-row gap-10 text-12 text-body-color rounded-8 bg-yellow-color w-108 h-36">
                 See More
                 <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
               </button>
             </Link>
           </div>
         </div>
-        <div class="portfolio-card">
-          <img src={img3} alt="" />
-          <div class="overlay">
-            <h3>ModaZen e-com webapp</h3>
-            <p>e-commerce web-app using mern stack.</p>
+        <div className="portfolio-card relative h-30 w-30 bg-bg-color rounded-20 overflow-hidden items-center justify-center gap-2.5">
+          <img className="relative h-30 w-30 object-cover" src={img3} alt="" />
+          <div className="overlay">
+            <h3 className="text-hover-color text-24 font-700">
+              ModaZen e-com webapp
+            </h3>
+            <p className="text-hover-color text-16 text-center">
+              e-commerce web-app using mern stack.
+            </p>
             <Link to="https://github.com/Pruthviraj-03/ecommerce_mern.git">
-              <button>
+              <button className="cursor-pointer flex items-center justify-center flex-row gap-10 text-12 text-body-color rounded-8 bg-yellow-color w-108 h-36">
                 See More
                 <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
               </button>
             </Link>
           </div>
         </div>
-        <div class="portfolio-card">
-          <img src={img1} alt="" />
-          <div class="overlay">
-            <h3>Music School Website</h3>
-            <p>music_school website using next.js and aceternity ui library.</p>
+        <div className="portfolio-card relative h-30 w-30 bg-bg-color rounded-20 overflow-hidden items-center justify-center gap-2.5">
+          <img className="relative h-30 w-30 object-cover" src={img1} alt="" />
+          <div className="overlay">
+            <h3 className="text-hover-color text-24 font-700">
+              Music School Website
+            </h3>
+            <p className="text-hover-color text-16 text-center">
+              music_school website using next.js and aceternity ui library.
+            </p>
             <Link to="https://github.com/Pruthviraj-03/music_school.git">
-              <button>
+              <button className="cursor-pointer flex items-center justify-center flex-row gap-10 text-12 text-body-color rounded-8 bg-yellow-color w-108 h-36">
                 See More
                 <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
               </button>

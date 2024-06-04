@@ -32,7 +32,7 @@ const App = () => {
   };
 
   return (
-    <div className="body">
+    <div className="body overflow-x-hidden p-0 m-0 font-roboto bg-body-color">
       <Header scrollToSection={scrollToSection} />
       <div ref={aboutRef}>
         <About />

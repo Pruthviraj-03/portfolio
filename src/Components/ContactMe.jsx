@@ -8,28 +8,24 @@ import {
 
 const ContactMe = () => {
   return (
-    <div className="contact-me" id="contact">
-      <h1>Contact Me</h1>
-      <div class="contact">
-        <div class="contact-card">
-          <FontAwesomeIcon
-            icon={faEnvelope}
-            className="contact-icons"
-          ></FontAwesomeIcon>
+    <div
+      className="w-screen p-100 flex flex-col items-center justify-center"
+      id="contact"
+    >
+      <h1 className="text-70 text-hover-color font-Libre font-700">
+        Contact Me
+      </h1>
+      <div className="flex gap-24">
+        <div className="bg-yellow-color p-10px rounded-8 flex gap-10 mt-7.5">
+          <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
           <p>pruthvirajkurane03@gmail.com</p>
         </div>
-        <div class="contact-card">
-          <FontAwesomeIcon
-            icon={faPhone}
-            className="contact-icons"
-          ></FontAwesomeIcon>
+        <div className="bg-yellow-color p-10px rounded-8 flex gap-10 mt-7.5">
+          <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
           <p>+91 8692848775</p>
         </div>
-        <div class="contact-card">
-          <FontAwesomeIcon
-            icon={faLocation}
-            className="contact-icons"
-          ></FontAwesomeIcon>
+        <div className="bg-yellow-color p-10px rounded-8 flex gap-10 mt-7.5">
+          <FontAwesomeIcon icon={faLocation} className="mt-5"></FontAwesomeIcon>
           <p>Mumbai, India</p>
         </div>
       </div>
