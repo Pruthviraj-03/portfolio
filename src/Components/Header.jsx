@@ -8,10 +8,9 @@ import {
   faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = ({ scrollToSection }) => {
-  const navigate = useNavigate();
   const [scrollInterval, setScrollInterval] = useState(null);
 
   const handleMouseDown = () => {
@@ -35,7 +34,6 @@ const Header = ({ scrollToSection }) => {
   }, [scrollInterval]);
 
   const handleRefreshPage = () => {
-    navigate("/");
     window.location.reload();
     window.scrollTo(0, 0);
   };
