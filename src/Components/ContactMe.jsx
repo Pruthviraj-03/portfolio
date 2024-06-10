@@ -16,16 +16,16 @@ const ContactMe = () => {
         Contact Me
       </h1>
       <div className="flex gap-24">
-        <div className="bg-yellow-color p-10px rounded-8 flex gap-10 mt-7.5">
+        <div className="bg-yellow-color p-10px rounded-8 flex items-center justify-center flex-row gap-10 mt-7.5">
           <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
           <p>pruthvirajkurane03@gmail.com</p>
         </div>
-        <div className="bg-yellow-color p-10px rounded-8 flex gap-10 mt-7.5">
+        <div className="bg-yellow-color p-10px rounded-8 flex items-center justify-center flex-row gap-10 mt-7.5">
           <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
           <p>+91 8692848775</p>
         </div>
-        <div className="bg-yellow-color p-10px rounded-8 flex gap-10 mt-7.5">
-          <FontAwesomeIcon icon={faLocation} className="mt-5"></FontAwesomeIcon>
+        <div className="bg-yellow-color p-10px rounded-8 flex items-center justify-center flex-row gap-10 mt-7.5">
+          <FontAwesomeIcon icon={faLocation}></FontAwesomeIcon>
           <p>Mumbai, India</p>
         </div>
       </div>

@@ -9,6 +9,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
+import bgImage from "../svg/model_bw.png";
 
 const Header = ({ scrollToSection }) => {
   const [scrollInterval, setScrollInterval] = useState(null);
@@ -38,7 +39,7 @@ const Header = ({ scrollToSection }) => {
     window.scrollTo(0, 0);
   };
   return (
-    <div className="header h-screen w-screen bg-right bg-contain bg-no-repeat px-100 py-36">
+    <div className="header h-screen w-screen px-100 py-36 relative">
       <div className="navbar flex justify-between items-center fixed w-90">
         <img
           className="h-56 w-56 object-contain cursor-pointer"
@@ -47,37 +48,37 @@ const Header = ({ scrollToSection }) => {
           onClick={handleRefreshPage}
         />
         <ul className="flex gap-30 cursor-pointer">
-          <li className="list-none my-0 mx-20 cursor-pointer">
-            <a
+          <li className="list-none my-0 mx-10px cursor-pointer">
+            <Link
               className="a hover:text-hover-color no-underline text-text-color"
               onClick={() => scrollToSection("about")}
             >
               About
-            </a>
+            </Link>
           </li>
-          <li>
-            <a
+          <li className="list-none my-0 mx-10px cursor-pointer">
+            <Link
               className="a hover:text-hover-color no-underline text-text-color"
               onClick={() => scrollToSection("skills")}
             >
               Skills
-            </a>
+            </Link>
           </li>
-          <li>
-            <a
+          <li className="list-none my-0 mx-10px cursor-pointer">
+            <Link
               className="a hover:text-hover-color no-underline text-text-color"
               onClick={() => scrollToSection("portfolio")}
             >
               Portfolio
-            </a>
+            </Link>
           </li>
-          <li>
-            <a
+          <li className="list-none my-0 mx-10px cursor-pointer">
+            <Link
               className="a hover:text-hover-color no-underline text-text-color"
               onClick={() => scrollToSection("contact")}
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="search h-48 w-200 bg-bg-color p-4 rounded-10 flex items-center justify-around">
@@ -107,7 +108,7 @@ const Header = ({ scrollToSection }) => {
             Contact Me
           </button>
         </div>
-        <div className="flex flex-col items-center gap-10 mt-35">
+        <div className="socials flex flex-col items-center gap-10 mt-35">
           <div className="bg-yellow-color h-17 w-2.5"></div>
           <Link to="https://www.facebook.com/raj.kurane.750">
             <FontAwesomeIcon
@@ -134,6 +135,9 @@ const Header = ({ scrollToSection }) => {
             />
           </Link>
         </div>
+      </div>
+      <div className="absolute top-1/2 left-2/3 -translate-x-1/2 -translate-y-1/2 h-screen w-70 laptop:w-80">
+        <img className="h-full w-full" src={bgImage} alt="Background" />
       </div>
     </div>
   );

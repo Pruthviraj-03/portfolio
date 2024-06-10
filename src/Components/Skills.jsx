@@ -15,7 +15,7 @@ import GitHub from "../svg/icons8-github.svg";
 const Skills = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center py-50 px-100"
+      className="flex flex-col items-center justify-center py-50 px-100 laptop:px-50"
       id="skills"
     >
       <h1 className="text-70 font-700 text-hover-color font-Libre">
