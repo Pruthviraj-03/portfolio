@@ -13,111 +13,90 @@ import BootStrap from "../svg/icons8-bootstrap.svg";
 import GitHub from "../svg/icons8-github.svg";
 
 const Skills = () => {
+  const skillsApi = [
+    {
+      id: 1,
+      logo: HTML,
+      name: "HTML",
+    },
+    {
+      id: 2,
+      logo: CSS,
+      name: "CSS",
+    },
+    {
+      id: 3,
+      logo: JavaScript,
+      name: "JavaScript",
+    },
+    {
+      id: 4,
+      logo: ReactJS,
+      name: "ReactJS",
+    },
+    {
+      id: 5,
+      logo: NodeJS,
+      name: "NodeJS",
+    },
+    {
+      id: 6,
+      logo: ExpressJS,
+      name: "ExpressJS",
+    },
+    {
+      id: 7,
+      logo: MongoDB,
+      name: "MongoDB",
+    },
+    {
+      id: 8,
+      logo: NextJS,
+      name: "NextJS",
+    },
+    {
+      id: 9,
+      logo: Redux,
+      name: "Redux",
+    },
+    {
+      id: 10,
+      logo: Tailwind,
+      name: "Tailwind",
+    },
+    {
+      id: 11,
+      logo: BootStrap,
+      name: "BootStrap",
+    },
+    {
+      id: 12,
+      logo: GitHub,
+      name: "GitHub",
+    },
+  ];
   return (
     <div
-      className="flex flex-col items-center justify-center py-50 px-100 laptop:px-50"
+      className="flex flex-col items-center justify-center py-50 px-100 laptop:px-50 tablet:px-25"
       id="skills"
     >
-      <h1 className="text-70 font-700 text-hover-color font-Libre">
+      <h1 className="text-70 font-700 text-hover-color font-Libre tablet:text-55">
         My Skills
       </h1>
       <div className="flex items-center w-full flex-wrap justify-center mt-50 gap-2.5">
-        <div className="skill-card flex flex-col overflow-hidden items-center justify-center h-20 w-20 bg-bg-color rounded-20 gap-2.5">
-          <img
-            className="h-7.5 w-7.5 object-contain"
-            src={HTML}
-            alt="HTML logo"
-          />
-          <h2 className="text-24 font-400 text-hover-color">HTML</h2>
-        </div>
-        <div className="skill-card flex flex-col overflow-hidden items-center justify-center h-20 w-20 bg-bg-color rounded-20 gap-2.5">
-          <img
-            className="h-7.5 w-7.5 object-contain"
-            src={CSS}
-            alt="CSS logo"
-          />
-          <h2 className="text-24 font-400 text-hover-color">CSS</h2>
-        </div>
-        <div class="skill-card flex flex-col overflow-hidden items-center justify-center h-20 w-20 bg-bg-color rounded-20 gap-2.5">
-          <img
-            className="h-7.5 w-7.5 object-contain"
-            src={JavaScript}
-            alt="JavaScript logo"
-          />
-          <h2 className="text-24 font-400 text-hover-color">JavaScript</h2>
-        </div>
-        <div class="skill-card flex flex-col overflow-hidden items-center justify-center h-20 w-20 bg-bg-color rounded-20 gap-2.5">
-          <img
-            className="h-7.5 w-7.5 object-contain"
-            src={ReactJS}
-            alt="ReactJS logo"
-          />
-          <h2 className="text-24 font-400 text-hover-color">ReactJS</h2>
-        </div>
-        <div class="skill-card flex flex-col overflow-hidden items-center justify-center h-20 w-20 bg-bg-color rounded-20 gap-2.5">
-          <img
-            className="h-7.5 w-7.5 object-contain"
-            src={NodeJS}
-            alt="NodeJS logo"
-          />
-          <h2 className="text-24 font-400 text-hover-color">NodeJS</h2>
-        </div>
-        <div class="skill-card flex flex-col overflow-hidden items-center justify-center h-20 w-20 bg-bg-color rounded-20 gap-2.5">
-          <img
-            className="h-7.5 w-7.5 object-contain"
-            src={ExpressJS}
-            alt="ExpressJS logo"
-          />
-          <h2 className="text-24 font-400 text-hover-color">ExpressJS</h2>
-        </div>
-        <div class="skill-card flex flex-col overflow-hidden items-center justify-center h-20 w-20 bg-bg-color rounded-20 gap-2.5">
-          <img
-            className="h-7.5 w-7.5 object-contain"
-            src={MongoDB}
-            alt="MongoDB logo"
-          />
-          <h2 className="text-24 font-400 text-hover-color">MongoDB</h2>
-        </div>
-        <div className="skill-card flex flex-col overflow-hidden items-center justify-center h-20 w-20 bg-bg-color rounded-20 gap-2.5">
-          <img
-            className="h-7.5 w-7.5 object-contain"
-            src={NextJS}
-            alt="NextJS logo"
-          />
-          <h2 className="text-24 font-400 text-hover-color">NextJS</h2>
-        </div>
-        <div className="skill-card flex flex-col overflow-hidden items-center justify-center h-20 w-20 bg-bg-color rounded-20 gap-2.5">
-          <img
-            className="h-7.5 w-7.5 object-contain"
-            src={Redux}
-            alt="Redux logo"
-          />
-          <h2 className="text-24 font-400 text-hover-color">Redux</h2>
-        </div>
-        <div className="skill-card flex flex-col overflow-hidden items-center justify-center h-20 w-20 bg-bg-color rounded-20 gap-2.5">
-          <img
-            className="h-7.5 w-7.5 object-contain"
-            src={Tailwind}
-            alt="Tailwind logo"
-          />
-          <h2 className="text-24 font-400 text-hover-color">Tailwind CSS</h2>
-        </div>
-        <div className="skill-card flex flex-col overflow-hidden items-center justify-center h-20 w-20 bg-bg-color rounded-20 gap-2.5">
-          <img
-            className="h-7.5 w-7.5 object-contain"
-            src={BootStrap}
-            alt="BootStrap logo"
-          />
-          <h2 className="text-24 font-400 text-hover-color">BootStrap</h2>
-        </div>
-        <div className="skill-card flex flex-col overflow-hidden items-center justify-center h-20 w-20 bg-bg-color rounded-20 gap-2.5">
-          <img
-            className="h-7.5 w-7.5 object-contain"
-            src={GitHub}
-            alt="GitHub logo"
-          />
-          <h2 className="text-24 font-400 text-hover-color">GitHub</h2>
-        </div>
+        {skillsApi.map((skill) => (
+          <div
+            className="skill-card flex flex-col overflow-hidden items-center justify-center h-20 w-20 bg-bg-color rounded-20 gap-2.5"
+            key={skill.id}
+          >
+            <img
+              className="h-7.5 w-7.5 object-contain"
+              src={skill.logo}
+              alt="{skill.logo} logo"
+            />
+            <h2 className="text-24 font-400 text-hover-color">{skill.name}</h2>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -4,11 +4,11 @@ const Education = () => {
   return (
     <div className="education flex flex-col w-screen relative items-center justify-center">
       <div className="bg-body-color w-screen h-10"></div>
-      <h1 className="absolute text-hover-color text-70 font-Libre">
+      <h1 className="absolute text-hover-color text-70 font-Libre tablet:text-55 tablet:ml-30">
         Education
       </h1>
       <div className="bg-bg-color w-screen p-10 flex flex-col gap-50">
-        <div className="exp h-30vh w-50 relative ml-20vh">
+        <div className="exp h-30vh w-50 relative ml-20vh tablet:w-full tablet:ml-0">
           <h2 className="text-hover-color text-32 font-400">
             JES College, Jogeshwari (E) - BSC-IT
           </h2>
@@ -26,7 +26,7 @@ const Education = () => {
             </p>
           </div>
         </div>
-        <div className="exp h-30vh w-50 relative ml-20vh">
+        <div className="exp h-30vh w-50 relative ml-20vh tablet:w-full tablet:ml-0">
           <h2 className="text-hover-color text-32 font-400">
             L.S.Raheja College, Santacruz (W) - H.S.C
           </h2>
