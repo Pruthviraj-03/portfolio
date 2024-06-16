@@ -17,12 +17,12 @@ const Education = () => {
               june 2021 - may 2024
             </h3>
             <p className="text-hover-color text-16 font-400">
-              In my pursuit of BSC-IT degree, I've consistently excelled, with
-              SGPA scores reflecting my dedication: 8.50 in the 1st and 3rd
-              semesters, 8.10 in the 2nd, 8.70 in the 4th, and an outstanding
-              9.60 in the 5th semester, showcasing my commitment to academic
-              excellence as I continue to pursue further knowledge in the 6th
-              semester.
+              I have successfully completed all the examinations for my B.Sc. in
+              Information Technology, achieving a commendable overall CGPA of
+              8.50. My consistent academic performance, with SGPA scores of 8.50
+              in the 1st and 3rd semesters, 8.10 in the 2nd, 8.70 in the 4th,
+              9.60 in the 5th, and 8.30 in the 6th semester, reflects my
+              dedication and commitment to excellence in my field.
             </p>
           </div>
         </div>
