@@ -119,7 +119,7 @@ const Skills = () => {
 
       {isMobile && (
         <div
-          className="flex flex-col items-center justify-center p-18 gap-24"
+          className="flex flex-col items-center justify-center p-18 gap-24 overflow-hidden"
           id="skills"
         >
           <h1 className="text-40 font-700 text-hover-color font-Libre">

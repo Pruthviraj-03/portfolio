@@ -122,7 +122,7 @@ const Porfolio = () => {
 
       {isMobile && (
         <div
-          className="flex flex-col items-center justify-center p-18 w-full"
+          className="flex flex-col items-center justify-center p-18 w-full overflow-hidden"
           id="portfolio"
         >
           <h1 className="text-40 font-700 text-hover-color font-Libre">

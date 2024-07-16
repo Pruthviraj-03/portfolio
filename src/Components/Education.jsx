@@ -60,7 +60,7 @@ const Education = () => {
       )}
 
       {isMobile && (
-        <div className="flex flex-col w-full items-center bg-body-color h-auto p-18 gap-24">
+        <div className="flex flex-col w-full items-center bg-body-color h-auto p-18 gap-24 overflow-hidden">
           <h1 className=" text-hover-color font-700 text-40 font-Libre">
             Education
           </h1>

@@ -47,7 +47,7 @@ const ContactMe = () => {
 
       {isMobile && (
         <div
-          className="w-full h-auto p-18 flex flex-col items-center justify-center gap-24"
+          className="w-full h-auto p-18 flex flex-col items-center justify-center gap-24 overflow-hidden"
           id="contact"
         >
           <h1 className="text-40 text-hover-color font-Libre font-700">

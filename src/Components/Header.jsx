@@ -156,7 +156,7 @@ const Header = ({ scrollToSection }) => {
       )}
 
       {isMobile && (
-        <div className="h-auto w-full p-18">
+        <div className="h-auto w-full p-18 overflow-hidden">
           <div className="navbar flex flex-row fixed w-full h-auto items-center gap-20">
             <img
               className="h-56 w-56 object-contain cursor-pointer"
