@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -10,6 +10,8 @@ import img5 from "../images/warren-umoh-pnMjGMOs2Xw-unsplash.jpg";
 import img6 from "../images/warren-umoh-VL12rhr4mi0-unsplash.jpg";
 
 const Porfolio = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
   const portfolioApi = [
     {
       id: 1,
@@ -68,43 +70,97 @@ const Porfolio = () => {
       link: "https://github.com/Pruthviraj-03/music_school.git",
     },
   ];
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 767);
+    };
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
   return (
-    <div
-      className="flex flex-col items-center justify-center py-50 px-100 tablet:px-50"
-      id="portfolio"
-    >
-      <h1 className="text-70 font-700 text-hover-color font-Libre tablet:text-55">
-        Portfolio
-      </h1>
-      <div className="portfolio-cards tablet:flex tablet:flex-wrap">
-        {portfolioApi.map((project) => (
-          <div
-            className="portfolio-card relative h-60 laptop:h-48vh tablet:h-30vh w-30 tablet:w-41 bg-bg-color rounded-20 overflow-hidden items-center justify-center gap-2.5"
-            key={project.id}
-          >
-            <img
-              className="relative h-60 laptop:h-48vh tablet:h-30vh w-30 tablet:w-41 object-cover"
-              src={project.img}
-              alt=""
-            />
-            <div className="overlay tablet:h-full tablet:w-full">
-              <h3 className="text-hover-color text-24 font-700">
-                {project.h3}
-              </h3>
-              <p className="text-hover-color text-16 text-center">
-                {project.p}
-              </p>
-              <Link to={project.link}>
-                <button className="cursor-pointer flex items-center justify-center flex-row gap-10 text-12 text-body-color rounded-8 bg-yellow-color w-108 h-36">
-                  See More
-                  <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-                </button>
-              </Link>
-            </div>
+    <>
+      {!isMobile && (
+        <div
+          className="flex flex-col items-center justify-center py-50 px-100 tablet:px-50"
+          id="portfolio"
+        >
+          <h1 className="text-70 font-700 text-hover-color font-Libre tablet:text-55">
+            Portfolio
+          </h1>
+          <div className="portfolio-cards tablet:flex tablet:flex-wrap">
+            {portfolioApi.map((project) => (
+              <div
+                className="portfolio-card relative h-60 laptop:h-48vh tablet:h-30vh w-30 tablet:w-41 bg-bg-color rounded-20 overflow-hidden items-center justify-center gap-2.5"
+                key={project.id}
+              >
+                <img
+                  className="relative h-60 laptop:h-48vh tablet:h-30vh w-30 tablet:w-41 object-cover"
+                  src={project.img}
+                  alt=""
+                />
+                <div className="overlay tablet:h-full tablet:w-full">
+                  <h3 className="text-hover-color text-24 font-700">
+                    {project.h3}
+                  </h3>
+                  <p className="text-hover-color text-16 text-center">
+                    {project.p}
+                  </p>
+                  <Link to={project.link}>
+                    <button className="cursor-pointer flex items-center justify-center flex-row gap-10 text-12 text-body-color rounded-8 bg-yellow-color w-108 h-36">
+                      See More
+                      <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+      )}
+
+      {isMobile && (
+        <div
+          className="flex flex-col items-center justify-center p-18 w-full"
+          id="portfolio"
+        >
+          <h1 className="text-40 font-700 text-hover-color font-Libre">
+            Portfolio
+          </h1>
+          <div className="flex flex-col gap-15 mt-20">
+            {portfolioApi.map((project) => {
+              return (
+                <div
+                  className="portfolio-card relative h-250 w-full bg-bg-color rounded-xl gap-10 overflow-hidden items-center justify-center"
+                  key={project.id}
+                >
+                  <img
+                    className="relative h-full w-full object-cover"
+                    src={project.img}
+                    alt=""
+                  />
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col h-full w-full bg-[#34353ba2] items-center justify-center p-6 gap-10">
+                    <h3 className="text-hover-color text-24 font-700">
+                      {project.h3}
+                    </h3>
+                    <p className="text-hover-color text-16 text-center">
+                      {project.p}
+                    </p>
+                    <Link to={project.link}>
+                      <button className="cursor-pointer flex items-center justify-center flex-row gap-10 text-12 text-body-color rounded-8 bg-yellow-color w-108 h-36">
+                        See More
+                        <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+                      </button>
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
