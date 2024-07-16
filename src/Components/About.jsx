@@ -40,7 +40,7 @@ const About = () => {
 
       {isMobile && (
         <div
-          className="h-auto w-ful p-18 flex items-center justify-center flex-col gap-10 mt-30"
+          className="h-auto w-ful p-18 flex items-center justify-center flex-col gap-10 mt-70"
           id="about"
         >
           <h1 className="text-40 font-700 text-hover-color font-Libre">
