@@ -156,7 +156,7 @@ const Header = ({ scrollToSection }) => {
       )}
 
       {isMobile && (
-        <div className="h-auto w-full p-18 overflow-hidden">
+        <div className="h-auto w- p-18 overflow-hidden">
           <div className="navbar flex flex-row fixed w-full h-auto items-center gap-20">
             <img
               className="h-56 w-56 object-contain cursor-pointer"
@@ -174,11 +174,11 @@ const Header = ({ scrollToSection }) => {
               <FontAwesomeIcon className="text-text-color" icon={faSearch} />
             </div>
             <FontAwesomeIcon
-              className="text-xl text-white cursor-pointer"
+              className="text-3xl text-white cursor-pointer"
               icon={faBars}
             />
           </div>
-          <div className="h-auto mt-50 flex bg-transparent items-center justify-between relative">
+          <div className="h-auto mt-50 flex bg-transparent items-center justify-between relative z-10">
             <div className="intro flex flex-col mt-50">
               <h3 className="text-hover-color font-400 text-16">
                 I'M{" "}
@@ -196,8 +196,8 @@ const Header = ({ scrollToSection }) => {
                 Contact Me
               </button>
             </div>
-            <div className="socials flex flex-col items-center gap-10 mt-50">
-              <div className="bg-yellow-color h-17 w-2.5"></div>
+            <div className="socials flex flex-col items-center gap-4 mt-30">
+              <div className="bg-yellow-color h-15 w-2.5"></div>
               <Link to="https://www.facebook.com/raj.kurane.750">
                 <FontAwesomeIcon
                   className="text-hover-color text-24 mb-5 cursor-pointer"
@@ -224,8 +224,12 @@ const Header = ({ scrollToSection }) => {
               </Link>
             </div>
           </div>
-          <div className="absolute top-1/3 left-2/3 -translate-x-1/2 -translate-y-1/2 h-50 w-90 mt-50">
-            <img className="h-full w-full" src={bgImage} alt="Background" />
+          <div className="absolute top-28 left-36 h-30vh w-60">
+            <img
+              className="h-full w-full object-cover"
+              src={bgImage}
+              alt="Background"
+            />
           </div>
         </div>
       )}
