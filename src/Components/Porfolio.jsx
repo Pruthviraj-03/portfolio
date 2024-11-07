@@ -69,6 +69,13 @@ const Porfolio = () => {
       p: "music_school website using next.js and aceternity ui library.",
       link: "https://github.com/Pruthviraj-03/music_school.git",
     },
+    {
+      id: 9,
+      img: img2,
+      h3: "Event Promotion Website.",
+      p: "Nexus Group Event promotion web development task.",
+      link: "https://github.com/Pruthviraj-03/Nexux-Group.git",
+    },
   ];
 
   useEffect(() => {
